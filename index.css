@@ -20,8 +20,6 @@
 }
 
 .body{
-/*background: rgb(205,222,215);
-background: linear-gradient(0deg, rgba(205,222,215,1) 17%, rgba(116,200,116,1) 100%);*/
 background: rgb(116,200,116);
 background: linear-gradient(0deg, rgba(116,200,116,1) 13%, rgba(110,110,110,1) 85%, rgba(71,71,71,1) 100%);
 }

@@ -13,7 +13,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
     </head>
 
-    <body>
+    <body class="body">
 
         <header class="header">
             <a href="https://fusilli.vercel.app/"><img src="./imagenes/logo-fusilli.png" tag="imagen logo" class="img-logo"></a>
@@ -27,11 +27,12 @@
             </div>
         </header>
 
-        <section id="registro">
+        <section id="ingresar">
 
-        <h1>Iniciar Sesión</h1>
+        <h1 class="titulo">Iniciar Sesión</h1>
 
-        <form class="form-contacto">
+        <div class="form">
+        <form class="form-inicio">
             
             <label for="email">Email</label>
             <input type="email" placeholder="Ingrese su Email" id="email">
@@ -39,8 +40,9 @@
             <input type="password" placeholder="Ingrese su Contraseña" id="contraseña">
             <input class="form-button" type="button" value="Ingresar">
         </form>
+        </div>
 
-        <p class="ingrese-aqui">¿Usted no posee cuenta? <a href="./registro.html">Regístrese Aquí</a></p>
+        <p class="registro-aqui">¿Usted no posee cuenta? <a href="./registro.html" class="link-registro">Regístrese Aquí</a></p>
 
         </section>
     </body>

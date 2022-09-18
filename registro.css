@@ -13,6 +13,11 @@
     src: url(./fonts/dancing-script.ttf);
 }
 
+.body{
+background-image: url(./imagenes/fondolindo.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+}
 
 /* HEADER */ 
     
@@ -31,7 +36,7 @@
 
 .img-logo {
     padding-left: 10px;
-    height: 60px;
+    height: 50px;
 }
 
 .navbar {
@@ -62,8 +67,50 @@
     border-bottom: black;
 }
 
+/* REGISTRO */
 
+#registro{
+padding-top: 100px;
+padding-left: 50px;
+padding-right: 50px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+color: white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 1.3rem;
+}
 
+.form-registro{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.3rem;
+    gap: 15px;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.titulo{
+    font-size: 1.5rem;   
+}
+
+.ingrese-aqui{
+    font-size: 1.3rem;
+}
+
+.link-ingresar{
+    color: green;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
 
 /*HOVERS*/
 
