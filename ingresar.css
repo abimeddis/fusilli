@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+    font-family: "playball";
+    src: url(./fonts/Playball-Regular.ttf);
+
+    font-family: "dancing-script";
+    src: url(./fonts/dancing-script.ttf);
+}
+
+/* HEADER */ 
+    
+.header {
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: rgba(75, 72, 72, 0.8);
+    z-index: 1;
+    }
+
+.img-logo {
+    padding-left: 10px;
+    height: 60px;
+}
+
+.navbar {
+    width: 60%;
+    height:100%;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    width: 100%;    
+    height: 100%;  
+    border-radius: 30px;
+    border-bottom: black;
+}
+
+
+
+
+
+/*HOVERS*/
+
+/*header*/
+.navbar-link:hover{
+font-size: 1.5rem;
+    }
