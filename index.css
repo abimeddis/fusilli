@@ -47,6 +47,17 @@ background: linear-gradient(0deg, rgba(116,200,116,1) 13%, rgba(110,110,110,1) 8
 .navbar {
     width: 60%;
     height:100%;
+    display: flex;
+}
+
+.navbar i {
+    font-size: 45px;
+    color: white;
+    display: none;
+}
+
+#toggle-menu{
+    display: none;
 }
 
 .navbar ul {
@@ -192,8 +203,6 @@ grid-gap: 10px;
 .img-galeria {
 width: 30vw;
 height: 40vh;
-width: 30vw;
-height: 40vh;
 }
 
 /*CONTACTO*/
@@ -236,6 +245,7 @@ text-decoration: underline;
 
 .mapa{
     height: 300px;
+    width: 380px;
 }
 
 
@@ -303,3 +313,117 @@ font-size: 1.5rem;
     transition: all 0.4s;
     z-index: 1;
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 914px){
+    .navbar ul {
+       background-color: rgba(75, 72, 72, 0.9);
+       width: 100%;
+       height: calc(100vh - 50px);
+       position: absolute;
+       top: 50px;
+       left: 0;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       gap: 70px;
+       transform: translateX(200%);
+       transition: all 0.4 ease-out;
+       }
+    .navbar i {
+       display: block;
+    }
+   
+    #toggle-menu:checked ~ .navbar-list{
+       transform: translateX(0%);
+       transition: all 0.4 ease-in;
+    }
+   
+    .navbar{
+       justify-content: end;
+    }
+    .form-inicio {
+           width: 80%;
+       }
+
+   .galeria-p {
+    font-size: 3rem;
+   }
+   #quienes-somos p{
+    font-size: 3rem;
+   }
+} 
+
+@media (max-width: 790px){
+ .contacto{
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .mapa{
+   justify-content: flex-start;
+   align-items: flex-start;
+ }
+ .img-hero{
+    display: none;
+ }
+
+}
+
+@media (max-width: 555px){
+.mapa{
+    display: none;
+}
+.galeria-p {
+    font-size: 2rem;
+   }
+   #quienes-somos p{
+    font-size: 2rem;
+   }
+
+ .logo-hero{
+    display: none;
+ }  
+
+}
+
+@media (max-width: 502px){
+       .form-inicio{
+           width: 100%;
+       }
+       
+       .navbar{
+       justify-content: center;
+   }   
+
+   .galeria-pastas{
+    grid-template-columns: 1fr 1fr;
+    }
+
+    .img-restaurant{
+        grid-template-columns:  1fr 1fr;
+        }
+
+   }
+
+   @media (max-width: 425px){
+    .galeria-p {
+        font-size: 1rem;
+        padding: 30px; 
+       }
+       #quienes-somos p{
+        font-size: 1rem;
+        padding: 30px; 
+       }
+       .img-galeria {
+        width: 40vw;
+        height: 30vh;
+        }
+        .restaurant-img {
+        width: 40vw;
+        height: 30vh;
+        }
+   }

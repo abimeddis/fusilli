@@ -11,20 +11,26 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fontsgoogleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     </head>
 
     <body class="body">
 
         <header class="header">
             <a href="https://fusilli.vercel.app/"><img src="./imagenes/logo-fusilli.png" tag="imagen logo" class="img-logo"></a>
-            <div class="navbar">
-            <ul>
-                <li> <a class="navbar-link" href="https://fusilli.vercel.app/#quienes-somos">QUIENES SOMOS</a> </li>
-                <li> <a class="navbar-link" href="https://fusilli.vercel.app/#galeria">GALERIA</a> </li>
-                <li> <a class="navbar-link" href="https://fusilli.vercel.app/#contacto">CONTACTO</a> </li>
-                <li> <a class="navbar-link" href="./registro.html">REGISTRARSE</a> </li>
-            </ul>
-            </div>
+            
+            <nav class="navbar">
+
+                <label for="toggle-menu"><i class="bi bi-list"></i></label>
+                <input type="checkbox" id="toggle-menu">
+
+                <ul class="navbar-list">
+                    <li> <a class="navbar-link" href="https://fusilli.vercel.app/#quienes-somos">QUIENES SOMOS</a> </li>
+                    <li> <a class="navbar-link" href="https://fusilli.vercel.app/#galeria">GALERIA</a> </li>
+                    <li> <a class="navbar-link" href="https://fusilli.vercel.app/#contacto">CONTACTO</a> </li>
+                    <li> <a class="navbar-link" href="./registro.html">REGISTRARSE</a> </li>
+                </ul>
+            </nav>
         </header>
 
         <section id="registro">
